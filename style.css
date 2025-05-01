@@ -1,0 +1,55 @@
+body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+h1 {
+    color: darkgray;
+}
+
+form {
+    margin: 20px auto;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+}
+
+button {
+    padding: 10px;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.card {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid lightgray;
+}
+
+.card h2 {
+    margin-bottom: 5px;
+    color: black;
+}
+
+.card p {
+    margin: 3px 0;
+}
+.icon-space {
+    margin-right: 8px;
+}
