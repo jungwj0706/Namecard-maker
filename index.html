@@ -6,6 +6,7 @@
     <title>디지털 명함 생성기</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
     <h1>디지털 명함 생성기</h1>
@@ -15,32 +16,11 @@
         <input type="text" id="email" placeholder="이메일" required>
         <input type="text" id="phone" placeholder="전화번호" required>
         <button type="submit">명함 만들기</button>
+        <button type="button" id="downloadBtn">이미지로 저장</button>
     </form>
 
     <div id="output"></div>
-
-    <script>
-        const form = document.getElementById("card_form");
-        const output = document.getElementById("output");
-
-        form.addEventListener("submit", function(event) {
-            event.preventDefault();
-
-            const name = document.getElementById("name").value;
-            const job = document.getElementById("job").value;
-            const email = document.getElementById("email").value;
-            const phone = document.getElementById("phone").value;
-
-        output.innerHTML = `
-            <div class="card">
-                <h2><i class="fa-solid fa-user icon-space"></i>${name}</h2>
-                <p><i class="fa-solid fa-briefcase icon-space"></i>${job}</p>
-                <p><i class="fa-solid fa-envelope icon-space"></i>${email}</p>
-                <p><i class="fa-solid fa-phone icon-space"></i>${phone}</p>
-            </div>`;
-    });
-
-    </script>
+    <script src="script.js"></script>
     
 </body>
 </html>
